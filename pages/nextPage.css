@@ -1,0 +1,240 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Roboto", sans-serif;
+    background: url(../img/main-bg-light.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+
+
+/****************************TODO************************************/
+
+.todo-wrap {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(to top, #4b79a15e, #283e51);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.55), 0 10px 10px rgba(0, 0, 0, 0.52);
+    margin-bottom: 50px;
+}
+
+.todo-header {
+    border-bottom: 1px solid;
+    height: 45px;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.todo-input {
+    background-color: transparent;
+    border-bottom: 1px solid #1080da;
+    width: 230px;
+    margin-right: 10px;
+    outline: none;
+    color: black;
+    padding-left: 10px;
+}
+
+.todo-input-error {
+    border-bottom: 1px solid red;
+}
+
+.todo-button-add {
+    border: 1px solid #1080da;
+    background: #1080da;
+    height: 30px;
+    width: 70px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+}
+
+.todo-list {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-right: 20px;
+}
+
+.todo-ul {
+    list-style: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.todo-task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid;
+}
+
+.todo-task-check {
+    color: greenyellow;
+    text-decoration: line-through;
+}
+
+.todo-wrap-button {
+    display: flex;
+    align-items: center;
+}
+
+.todo-delete {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    background: url(../img/trash.png) no-repeat;
+}
+
+.todo-button-ok {
+    width: 32px;
+    height: 25px;
+    cursor: pointer;
+    background: url(../img/check.png) no-repeat;
+}
+
+
+/*************************END***TODO************************************/
+
+
+/****************************WEATHER************************************/
+
+.weather-wrap {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(to top, #4b79a15e, #283e51);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.55), 0 10px 10px rgba(0, 0, 0, 0.52);
+    margin-bottom: 50px;
+}
+
+.city {
+    font-size: 30px;
+}
+
+.weather-header {
+    border-bottom: 1px solid;
+    height: 215px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.weather-input-wrap {
+    flex-direction: column;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.out-wrap {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.out-p {
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 400;
+    width: 100%;
+}
+
+.out-p:hover {
+    color: #fff;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #639cea;
+    border-radius: 5px;
+    height: 35px;
+}
+
+.weather-content {
+    display: flex;
+    align-items: center;
+}
+
+.weather-info {
+    width: 100%;
+    height: 283px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+/*************************END***WEATHER************************************/
+
+
+/****************************MOBILE****************************************/
+
+@media(min-width: 500px) and (max-width: 1010px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media(min-width: 0px) and (max-width: 499px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .todo-wrap {
+        width: 300px;
+        height: 300px;
+    }
+    .weather-wrap {
+        width: 300px;
+        height: 300px;
+    }
+    .weather-input-wrap {
+        height: 100px;
+    }
+    .city {
+        font-size: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .out-p {
+        font-size: 12px;
+    }
+    .weather-info {
+        justify-content: start;
+    }
+}

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="/favicon.jpeg" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Hello</title>
+</head>
+
+<body>
+    <!-- popup -->
+    <div class="modal-wrap">
+        <div>
+            Введите: admin admin
+            <a href="#" class="close"></a>
+        </div>
+
+        <div class="login-form">
+            <p class="form-text">Login</p>
+            <p class="mini">введите:admin</p>
+            <input type="text" class="login-input" />
+            <p class="form-text">Password</p>
+            <p class="mini">введите:admin</p>
+            <input type="text" class="login-password" />
+            <button class="popUp-enter">Enter</button>
+        </div>
+    </div>
+
+    <!-- popup -->
+
+    <!-- enter theme -->
+    <div class="enter-theme">
+        <label for="theme">Выберите тему</label>
+        <select name="тема" id="theme">
+        <option class="option" value="dark" selected>Dark</option>
+        <option class="option" value="light">Light</option>
+      </select>
+    </div>
+    <!-- enter theme -->
+
+    <!-- left side -->
+    <div class="word-content-wrap">
+        <div class="more-info">
+            <div class="logo-skils-wrap">
+                <div class="logo-html">
+                    <img src="./img/html.png" alt="html" />
+                </div>
+                <div class="logo-css">
+                    <img src="./img/css.png" alt="css" />
+                </div>
+                <div class="logo-js">
+                    <img src="./img/js.png" alt="js" />
+                </div>
+                <div class="logo-react">
+                    <img src="./img/react.png" alt="react" />
+                </div>
+            </div>
+            <h2 class="more-info-h2">Информация о приложении</h2>
+            <p class="info">
+                Структура приложения написана на FLEX-BOX. За програмную часть отвечает JAVASCRIPT. Сторонние библиотеки не использовались.
+            </p>
+        </div>
+        <!-- left side -->
+
+        <!-- word list header -->
+        <div class="word-list">
+            <div class="info-header">
+                <div class="my-photo"></div>
+                <div class="my-info-header">
+                    <h2 class="info-header-name">Алексеев Константин Викторович</h2>
+                    <h3 class="info-header-status">В поиске работы</h3>
+                    <h3 class="info-header-contacts">
+                        <div class="info-header-vk">
+                            <a class="vk" href="https://vk.com/id47559449">
+                                <div><img src="./img/vk.png" alt="vk-icon" /></div>
+
+                                <div class="text-vk">https://vk.com/id47559449</div>
+                            </a>
+                        </div>
+                        <div class="info-header-telegram">
+                            <div>
+                                <img class="telegram" src="./img/telegram.png" alt="telegram-icon" />
+                            </div>
+
+                            <div class="text-telegram"><a href="https://t.me/@Bich_kot">+7(906)-224-70-33</a></div>
+                        </div>
+                    </h3>
+                </div>
+            </div>
+            <!-- word list header -->
+
+            <!-- main content word list -->
+            <div class="main-content">
+                <div class="professional-status">
+                    <div class="tabs">
+                        <div class="tabs-header">
+                            <div class="tab-head" data-tab="0">Обо мне</div>
+                            <div class="tab-head" data-tab="1">Ожидания от работы</div>
+                            <!-- <div class="tab-head" data-tab="2"></div> -->
+                        </div>
+                        <div class="tabs-body">
+                            <div class="tab-text active">
+                                Имею опыт работы в сферах информационной безопасности и системного администрирования. В каждом деле стараюсь разобраться и улучшить свои навыки и применить их в работе.
+                            </div>
+                            <div class="tab-text">
+                                Хотелось бы работать в сплоченном коллективе IT профессионалов, развиваться, и быть полезным.
+                            </div>
+                            <!-- <div class="tab-text">
+                                sit amet consectetur adipisicing elit. Iste reiciendis perspiciatis magni veniam delectus voluptate eveniet rerum nemo saepe minima?m doloribus tempora saepe!
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="professional-status">
+                        <h2 class="pro-stat-h2">Опыт работы</h2>
+                        <span class="content-info">
+                          Последнее место работы, системный администратор на предприятии.
+                          Работал в основном с Windows Server Standart 2008. Установил и настроил 
+                          файловое хранилище NasSynology. Сделал небольшой корпоративный чатик.
+                          Работал с Linux (Ubuntu Server и самой Ubuntu).Выполнял достаточно много задач поставленных руководством, от прокладки сетей до
+                          настройки роутеров.
+                          </span
+              >
+            </div>
+            <!-- <div class="professional-status">
+              <h2 class="pro-stat-h2">Обучение</h2>
+              <span class="content-info"
+                >Закончил институт сервиса и экономики(СпбГЭУ) </span
+              >
+            </div> -->
+          </div>
+          <!-- main content word list -->
+
+          <!-- main content skils -->
+          <div class="main-content-skils">
+            <div class="content-skils">
+              <h2 class="header-main-content-skils">Профессиональные навыки</h2>
+
+              <div class="progress-container">
+                <img src="./img/html.png" alt="html" class="progress-img" />
+                <div class="progress-field">
+                  <div class="progress-html">
+                    <p class="progress-text" id="html"></p>
+                  </div>
+                </div>
+              </div>
+              <div class="progress-container">
+                <img src="./img/css.png" alt="css" class="progress-img" />
+                <div class="progress-field">
+                  <div class="progress-css">
+                    <p class="progress-text" id="css"></p>
+                  </div>
+                </div>
+              </div>
+              <div class="progress-container">
+                <img src="./img/js.png" alt="js" class="progress-img" />
+                <div class="progress-field">
+                  <div class="progress-js">
+                    <p class="progress-text" id="js"></p>
+                  </div>
+                </div>
+              </div>
+              <div class="progress-container">
+                <img src="./img/react.png" alt="react" class="progress-img" />
+                <div class="progress-field">
+                  <div class="progress-react">
+                    <p class="progress-text" id="react"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="content-interes">
+              <h2 class="header-main-content-skils">Интересы</h2>
+              <div class="interes-text">
+                Всегда интересовался новинками в IT сфере.
+                Следил за выходом новых девайсов и технологий.
+                Еще в школьные годы интересовался HTML, верстал простенькие странички.
+                С недавних пор вернулся к вебу, прошел курсы по javascript, 
+                подразобрался с ReactJS и понял, что это то, чем я хочу заниматься на фуллтайм основе.
+
+              </div>
+            </div>
+          </div>
+          <!-- main content skils -->
+
+          <!-- footer word list -->
+          <div class="footer-word-list">
+            <button class="footer-button">Войти</button>
+          </div>
+          <!-- footer word list -->
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="info-footer">
+        <p class="info-footer-p">написать мне в telegram</p>
+        <input type="text" class="name" placeholder="your name" />
+        <p class="error-mail">введите корректный email</p>
+        <input type="email" class="email" placeholder="your email" />
+        <input type="text" class="message" placeholder="your message" />
+        <button class="send-btn">SEND</button>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
