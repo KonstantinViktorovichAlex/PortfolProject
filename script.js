@@ -147,7 +147,7 @@ modalWindow.addEventListener("click", function(e) {
 
 loginForm.addEventListener("keyup", function(e) {
     if (e.keyCode === 13) {
-        if (login.value === "admin" && pass.value === "admin") {
+        if (login.value.toLowerCase() === "admin" && pass.value.toLowerCase() === "admin") {
             document.location.href = "./pages/nextPage.html";
         } else {
             redMini.forEach(redItem => {
@@ -158,7 +158,7 @@ loginForm.addEventListener("keyup", function(e) {
 });
 
 buttonEnterForm.addEventListener("click", function() {
-    if (login.value === "admin" && pass.value === "admin") {
+    if (login.value.toLowerCase() === "admin" && pass.value.toLowerCase() === "admin") {
         document.location.href = "./pages/nextPage.html";
     } else {
         redMini.forEach(redItem => {
