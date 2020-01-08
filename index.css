@@ -7,14 +7,14 @@
 body {
     height: 100%;
     background-color: black;
-    background: url(./img/main-bg.jpg) no-repeat 50% 50%;
+    background: url(./img/most_gorod_vid_sverhu_151947_1920x1080.jpg) no-repeat 50% 50%;
     background-size: cover;
     background-attachment: fixed;
     font-family: "Roboto", sans-serif;
 }
 
 .light-body {
-    background: url(./img/main-bg-light.jpg) no-repeat 50% 50%;
+    background: url(./img/zdanie_fasad_arhitektura_142769_1920x1080.jpg) no-repeat 50% 50%;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -35,9 +35,13 @@ body {
     flex-direction: column;
     justify-content: center;
     width: 500px;
-    color: #1080da;
+    color: rgb(80, 78, 78);
     margin-right: 30px;
     margin-bottom: 40px;
+}
+
+.more-info-light {
+    color: #fff;
 }
 
 .logo-skils-wrap {
@@ -60,7 +64,7 @@ body {
     position: absolute;
     top: -2px;
     left: -2px;
-    border: 2px solid #1080da;
+    border: 2px solid rgb(80, 78, 78);
     border-radius: 50%;
     height: 64px;
     width: 64px;
@@ -86,7 +90,7 @@ body {
     position: absolute;
     top: -2px;
     left: -2px;
-    border: 2px solid #1080da;
+    border: 2px solid rgb(80, 78, 78);
     border-radius: 50%;
     height: 64px;
     width: 64px;
@@ -112,7 +116,7 @@ body {
     position: absolute;
     top: -2px;
     left: -2px;
-    border: 2px solid #1080da;
+    border: 2px solid rgb(80, 78, 78);
     border-radius: 50%;
     height: 64px;
     width: 64px;
@@ -138,7 +142,7 @@ body {
     position: absolute;
     top: -2px;
     left: -2px;
-    border: 2px solid #1080da;
+    border: 2px solid rgb(80, 78, 78);
     border-radius: 50%;
     height: 64px;
     width: 64px;
@@ -183,7 +187,7 @@ body {
     height: 230px;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(162, 162, 162, 0.9);
+    background-color: rgb(162, 162, 162, 0.5);
 }
 
 .info-header-light {
@@ -390,7 +394,7 @@ body {
     align-items: center;
     text-align: center;
     width: 100%;
-    color: #1080da;
+    color: rgb(80, 78, 78)
 }
 
 .info-footer-p {
@@ -407,7 +411,7 @@ body {
     outline: none;
     width: 235px;
     height: 20px;
-    border: 1px solid #1080da;
+    border: 1px solid rgb(80, 78, 78);
     background: rgba(250, 250, 250, 0.8);
     font-weight: bold;
     font-size: 15px;
@@ -424,7 +428,7 @@ body {
     outline: none;
     width: 235px;
     height: 20px;
-    border: 1px solid #1080da;
+    border: 1px solid rgb(80, 78, 78);
     background: rgba(250, 250, 250, 0.8);
     font-weight: bold;
     font-size: 15px;
@@ -448,7 +452,7 @@ body {
     outline: none;
     width: 235px;
     height: 20px;
-    border: 1px solid #1080da;
+    border: 1px solid rgb(80, 78, 78);
     background: rgba(250, 250, 250, 0.8);
     font-weight: bold;
     font-size: 15px;
@@ -463,7 +467,7 @@ body {
 
 .send-btn {
     cursor: pointer;
-    border: 1px solid #1080da;
+    border: 1px solid rgb(80, 78, 78);
     width: 60px;
     height: 25px;
     margin-bottom: 10px;
@@ -489,21 +493,17 @@ body {
 }
 
 .progress-html {
-    background: #1080da;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
     text-align: center;
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
     height: 10px;
     font-size: 9px;
     color: black;
-}
-
-.progress-html:hover {
-    background: linear-gradient(to right, #ff416c, #ff4b2b);
 }
 
 .progress-css {
-    background: #1080da;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
     text-align: center;
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
@@ -511,14 +511,10 @@ body {
     font-size: 9px;
     color: black;
     width: 0px;
-}
-
-.progress-css:hover {
-    background: linear-gradient(to right, #ff416c, #ff4b2b);
 }
 
 .progress-js {
-    background: #1080da;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
     text-align: center;
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
@@ -526,14 +522,10 @@ body {
     font-size: 9px;
     color: black;
     width: 0px;
-}
-
-.progress-js:hover {
-    background: linear-gradient(to right, #ff416c, #ff4b2b);
 }
 
 .progress-react {
-    background: #1080da;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
     text-align: center;
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
@@ -541,10 +533,6 @@ body {
     font-size: 9px;
     color: black;
     width: 0px;
-}
-
-.progress-react:hover {
-    background: linear-gradient(to right, #ff416c, #ff4b2b);
 }
 
 
@@ -557,8 +545,8 @@ body {
 }
 
 .footer-button {
-    border: 1px solid #1080da;
-    background: #1080da;
+    /* border: 1px solid #1080da; */
+    background: rgb(80, 78, 78);
     height: 40px;
     width: 100px;
     border-radius: 6px;
@@ -579,7 +567,7 @@ body {
 }
 
 label {
-    color: #1080da;
+    color: rgb(80, 78, 78);
     margin-bottom: 10px;
     font-weight: bold;
     font-size: 17px;
@@ -614,10 +602,22 @@ label {
     left: 0;
     z-index: 10;
     margin: auto;
-    background-color: rgb(80, 78, 78, 0.97);
-    color: #fff;
+    background-color: rgb(80, 78, 78, 0.67);
+    color: black;
     font-weight: bold;
     font-style: italic;
+}
+
+.modal-wrap::before {
+    content: '';
+    position: absolute;
+    /* Абсолютное позиционирование */
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    filter: blur(5px);
 }
 
 .login-form {
@@ -628,47 +628,53 @@ label {
     justify-content: center;
     align-items: center;
     padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(180, 178, 178, 0.65);
+}
+
+.info-pass-name {
+    margin-bottom: 30px;
+    font-weight: 100;
 }
 
 .form-text {
+    width: 100%;
     margin-bottom: 10px;
-    color: white;
-    font-size: 20px;
-    font-weight: 900;
+    color: black;
+    font-size: 16px;
+    font-weight: 100;
     font-style: italic;
 }
 
 .login-input {
     width: 100%;
-    height: 20px;
-    color: #ff435b;
+    height: 25px;
+    color: #fff;
     font-weight: 300px;
     font-size: 15px;
     border-radius: 10px;
     outline: none;
     padding-left: 10px;
-    background: transparent;
-    border-bottom: 1px solid #1080da;
-    margin-bottom: 15px;
+    background-color: rgba(64, 64, 64, 0.6);
+    margin-bottom: 30px;
 }
 
 .login-password {
     width: 100%;
-    height: 20px;
-    color: #ff435b;
+    height: 25px;
+    color: #fff;
     font-weight: 300px;
     font-size: 15px;
     border-radius: 10px;
     outline: none;
     padding-left: 10px;
-    background: transparent;
-    border-bottom: 1px solid #1080da;
-    margin-bottom: 15px;
+    background-color: rgba(64, 64, 64, 0.6);
+    margin-bottom: 30px;
 }
 
 .popUp-enter {
-    border: 1px solid #1080da;
-    background: #1080da;
+    background: rgb(80, 78, 78);
+    ;
     height: 40px;
     width: 100px;
     border-radius: 6px;
@@ -737,6 +743,10 @@ label {
         align-items: center;
         width: 100%;
     }
+    .more-info {
+        -webkit-text-stroke: 0.5px #000000;
+        color: #fff;
+    }
 }
 
 @media(min-width: 700px) and (max-width: 799px) {
@@ -757,6 +767,10 @@ label {
     .content-interes {
         width: 100%;
         margin-bottom: 40px;
+    }
+    .more-info {
+        -webkit-text-stroke: 0.5px #000000;
+        color: #fff;
     }
 }
 
@@ -785,6 +799,10 @@ label {
     .info-header {
         flex-direction: column-reverse;
         height: 280px;
+    }
+    .more-info {
+        -webkit-text-stroke: 0.5px #000000;
+        color: #fff;
     }
 }
 
@@ -851,5 +869,9 @@ label {
     }
     .interes-text {
         font-size: 14px;
+    }
+    .more-info {
+        -webkit-text-stroke: 0.5px #000000;
+        color: #fff;
     }
 }

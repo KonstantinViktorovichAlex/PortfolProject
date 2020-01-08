@@ -1,7 +1,7 @@
 // ********************* TABS *********************
 
-const tabHeader = document.querySelectorAll(".tab-head");
-const tabText = document.querySelectorAll(".tab-text");
+const tabHeader = document.querySelectorAll(".tab-head"),
+    tabText = document.querySelectorAll(".tab-text");
 
 tabHeader.forEach(tabElementHeader => {
     tabElementHeader.addEventListener("click", clickTab);
@@ -22,16 +22,16 @@ function clickTab(e) {
 
 // ********************* LOAD SKILS *********************
 
-const progressHtml = document.querySelector(".progress-html");
-const progressCss = document.querySelector(".progress-css");
-const progressJs = document.querySelector(".progress-js");
-const progressReact = document.querySelector(".progress-react");
+const progressHtml = document.querySelector(".progress-html"),
+    progressCss = document.querySelector(".progress-css"),
+    progressJs = document.querySelector(".progress-js"),
+    progressReact = document.querySelector(".progress-react");
 
-let fieldHtml = 0;
-let fieldCss = 0;
-let fieldJs = 0;
-let fieldReact = 0;
-let timer;
+let fieldHtml = 0,
+    fieldCss = 0,
+    fieldJs = 0,
+    fieldReact = 0,
+    timer;
 
 function loadingHtml() {
     document.querySelector("#html").innerHTML = fieldHtml + "%";
@@ -80,15 +80,16 @@ function loadingReact() {
 // *********************END LOAD SKILS *********************
 
 // ********************* THEME *********************
-const pageTheme = document.getElementById("theme");
-const wordList = document.querySelector(".word-list");
-const infoHeader = document.querySelector(".info-header");
-const proStatH2 = document.querySelectorAll(".pro-stat-h2");
-const contentInfo = document.querySelectorAll(".content-info");
-const headerMainContentSkils = document.querySelectorAll(
-    ".header-main-content-skils"
-);
-const interesText = document.querySelector(".interes-text");
+const pageTheme = document.getElementById("theme"),
+    wordList = document.querySelector(".word-list"),
+    infoHeader = document.querySelector(".info-header"),
+    proStatH2 = document.querySelectorAll(".pro-stat-h2"),
+    contentInfo = document.querySelectorAll(".content-info"),
+    moreInfo = document.querySelector('.more-info'),
+    headerMainContentSkils = document.querySelectorAll(
+        ".header-main-content-skils"
+    ),
+    interesText = document.querySelector(".interes-text");
 
 pageTheme.addEventListener("change", function() {
     if (pageTheme.value === "light") {
@@ -105,6 +106,7 @@ pageTheme.addEventListener("change", function() {
             item.classList.add("header-main-content-skils-light");
         });
         interesText.classList.add("interes-text-light");
+        moreInfo.classList.add('more-info-light');
     } else if (pageTheme.value === "dark") {
         document.body.classList.remove("light-body");
         wordList.classList.remove("word-list-light");
@@ -119,21 +121,20 @@ pageTheme.addEventListener("change", function() {
             item.classList.remove("header-main-content-skils-light");
         });
         interesText.classList.remove("interes-text-light");
+        moreInfo.classList.remove('more-info-light');
     }
 });
 // *********************END THEME *********************
 
 // ********************* MODAL *********************
 
-const buttonEnter = document.querySelector(".footer-button");
-const modalWindow = document.querySelector(".modal-wrap");
-const loginForm = document.querySelector(".login-form");
-
-const login = document.querySelector(".login-input");
-const pass = document.querySelector(".login-password");
-const buttonEnterForm = document.querySelector(".popUp-enter");
-
-const redMini = document.querySelectorAll(".mini");
+const buttonEnter = document.querySelector(".footer-button"),
+    modalWindow = document.querySelector(".modal-wrap"),
+    loginForm = document.querySelector(".login-form"),
+    login = document.querySelector(".login-input"),
+    pass = document.querySelector(".login-password"),
+    buttonEnterForm = document.querySelector(".popUp-enter"),
+    redMini = document.querySelectorAll(".mini");
 
 buttonEnter.addEventListener("click", function() {
     modalWindow.style.display = "flex";
@@ -147,7 +148,7 @@ modalWindow.addEventListener("click", function(e) {
 
 loginForm.addEventListener("keyup", function(e) {
     if (e.keyCode === 13) {
-        if (login.value === "admin" && pass.value === "admin") {
+        if (login.value.toLowerCase() === "admin" && pass.value.toLowerCase() === "admin") {
             document.location.href = "./pages/nextPage.html";
         } else {
             redMini.forEach(redItem => {
@@ -158,7 +159,7 @@ loginForm.addEventListener("keyup", function(e) {
 });
 
 buttonEnterForm.addEventListener("click", function() {
-    if (login.value === "admin" && pass.value === "admin") {
+    if (login.value.toLowerCase() === "admin" && pass.value.toLowerCase() === "admin") {
         document.location.href = "./pages/nextPage.html";
     } else {
         redMini.forEach(redItem => {
@@ -173,12 +174,12 @@ buttonEnterForm.addEventListener("click", function() {
 
 const token = "1056896310:AAF3z3e1jiOqHrVw2QvYVn9JhcVE5p56nmo";
 
-const nameInput = document.querySelector(".name");
-const emailInput = document.querySelector(".email");
-const messageInput = document.querySelector(".message");
-const btnSend = document.querySelector(".send-btn");
-const errorMail = document.querySelector('.error-mail');
-const infoFooterP = document.querySelector('.info-footer-p');
+const nameInput = document.querySelector(".name"),
+    emailInput = document.querySelector(".email"),
+    messageInput = document.querySelector(".message"),
+    btnSend = document.querySelector(".send-btn"),
+    errorMail = document.querySelector('.error-mail'),
+    infoFooterP = document.querySelector('.info-footer-p');
 
 
 btnSend.addEventListener("click", sendMessage);

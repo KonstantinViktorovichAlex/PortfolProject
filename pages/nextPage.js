@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
     /**********************TODO***********************/
 
-    const todoInput = document.querySelector(".todo-input");
-    const todoButtonAdd = document.querySelector(".todo-button-add");
-    const todoUl = document.querySelector(".todo-ul");
+    const todoInput = document.querySelector(".todo-input"),
+        todoButtonAdd = document.querySelector(".todo-button-add"),
+        todoUl = document.querySelector(".todo-ul");
 
     const tasksArr = []; //РОДИТЬ НОРМАЛЬНЫЙ ОБЪЕКТ КЛЮЧ ЗНАЧЕНИЕ
 
@@ -29,10 +29,10 @@ document.addEventListener("DOMContentLoaded", () => {
     function createTask(taskTitle, index) {
         const { value, id } = taskTitle;
         // тупо принимает таску и создает каждую таску визуально
-        const newtask = document.createElement("li");
-        const wrapButton = document.createElement("div");
-        const buttonDelete = document.createElement("div");
-        const buttonOk = document.createElement("div");
+        const newtask = document.createElement("li"),
+            wrapButton = document.createElement("div"),
+            buttonDelete = document.createElement("div"),
+            buttonOk = document.createElement("div");
 
         wrapButton.classList.add("todo-wrap-button");
         newtask.classList.add("todo-task");
@@ -155,11 +155,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function showInfo(dataServer) {
-        const temp = dataServer.main.temp - 273.15; // Пересчёт в градусы Цельсия: tC = tK − 273 ,15
-        const humidity = dataServer.main.humidity;
-        const description = dataServer.weather[0].description;
-        const wind = dataServer.wind.speed;
-        const icon = dataServer.weather[0].icon;
+        const temp = dataServer.main.temp - 273.15, // Пересчёт в градусы Цельсия: tC = tK − 273 ,15
+            humidity = dataServer.main.humidity,
+            description = dataServer.weather[0].description,
+            wind = dataServer.wind.speed,
+            icon = dataServer.weather[0].icon
         document.querySelector(".temp").innerHTML = `<p> ${temp.toFixed(
       0
     )} &#8451</p>`;
@@ -176,4 +176,9 @@ document.addEventListener("DOMContentLoaded", () => {
             ".icon"
         ).src = `https://openweathermap.org/img/wn/${icon}.png`;
     }
+
+    const backBtn = document.querySelector('.back-btn');
+    backBtn.addEventListener('click', function() {
+        document.location.href = "../index.html";
+    })
 });

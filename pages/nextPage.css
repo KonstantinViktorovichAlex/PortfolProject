@@ -200,6 +200,24 @@ body {
 
 /*************************END***WEATHER************************************/
 
+.back {
+    text-align: center;
+    height: auto;
+    width: 100%;
+}
+
+.back-btn {
+    background: rgb(80, 78, 78);
+    height: 40px;
+    width: 100px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.back-btn:hover {
+    background: linear-gradient(to bottom, #ff416c, #ff4b2b);
+}
+
 
 /****************************MOBILE****************************************/
 
